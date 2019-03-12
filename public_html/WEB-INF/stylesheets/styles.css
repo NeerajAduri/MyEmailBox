@@ -1,0 +1,115 @@
+body{
+width:100%;
+margin: 0px;
+}
+.container{
+    margin:2% 5% 2% 5%;
+    max-width: 90%;
+}
+.checkbox-width{
+    width:5%;
+}
+input[type=checkbox]{
+    width:15px;
+    height:15px;
+}
+.from-width{
+    white-space: nowrap;
+    overflow: hidden !important;
+    width: 35%;
+    text-overflow: ellipsis;
+}
+.sub-width{
+    width:60%;
+}
+.left{
+    float:left;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    height: 5%;
+    border: 1px solid #867b7b66;
+    border-radius: 3px;
+    background-color: #ccd4dc;
+}
+.link{
+    margin:1%;
+    color:inherit;
+}
+.list:hover{
+    box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.122);
+}
+
+.header-container{
+	width:100%;	
+    display: flex;
+    text-align: center;
+    background-color: #a9a9a957;
+}
+#list,#create{
+	width:50%;
+	border-right:1px solid grey;
+	border-bottom: 2px solid grey;
+	padding:2%;
+}
+.selected{
+	background-color:#9c9cf1d9;
+}
+.mailId{
+	width:40%;
+}
+.mailSub{
+	width:50%;
+}
+.item{
+	width:100%;
+	display:flex;
+	padding:2%;
+	box-sizing: border-box;
+	border-bottom:2px solid grey;
+    background-color: #a9a9a957;
+}
+.item:focus{
+	background-color:white;
+}
+[id^="item"] {
+    width:10%;
+}
+
+}
+}
+#emailContent{
+	width:100%;
+	height: 400px;
+	overflow-y:scroll;
+	word-wrap: break-word;
+	padding:2%;
+	box-sizing:border-box;
+}
+.emailContent{
+	width:100%;
+	height: 10%;
+	background-color: #ffffff;
+}
+button{
+  background-color: #a9a9a957; /* Green */
+  border: 1px solid grey;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+button:hover{
+	background-color: #9c9cf1d9;
+}
+button:focus{
+	outline:0;
+}
+
+footer{
+	float:right;
+	padding:2%;
+}

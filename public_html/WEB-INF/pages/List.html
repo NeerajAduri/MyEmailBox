@@ -1,0 +1,17 @@
+<script src="WEB-INF/js/app.js"></script>
+
+<div ng-init="submit1()" ng-controller="mainController"> 
+    <div ng-repeat="j in mailList" >
+        <div id="div{{j.id}}"  class="list" style="background-color: rgba(242,245,245,0.8)">
+                    <!--ng-click="submit3(j.id)" if reload is not needed-->
+            <a href="#/view/{{j.id}}" target="_self" class="link">
+                    <div class="checkbox-width left">
+                        <input type="checkbox" default="0" ng-model="check" value="val" id="box{{j.id}}" ng-change="cbox(j.id,check)">
+                    </div>
+                    <div class="from-width left">{{j.from}}</div>
+                    <div class="sub-width left">{{j.subject}}</div>
+            </a>
+
+        </div>
+    </div>
+</div>
