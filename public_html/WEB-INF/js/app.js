@@ -4,34 +4,37 @@ var app = angular.module('app', ['ngRoute']);
 var reg = new RegExp('^[0-9]$');
 var url = new URL(window.location);
 var arr= url.href.split('/');
-var ID=arr[5];
+
+
+
+var ID=arr[6];
 
 app.config(function ($routeProvider) {
     
     $routeProvider
     .when('/', {
-        templateUrl: '../public_html//WEB-INF/pages/List.html',
+        templateUrl: '../public_html/WEB-INF/pages/List.html',
         controller: 'mainController'
     })
     
     .when('/create', {
-        templateUrl: '../public_html//WEB-INF/pages/Create.html',
+        templateUrl: '../public_html/WEB-INF/pages/Create.html',
         controller: 'mainController'
     })
     
     
     .when(('/view/:reg' ), {
-        templateUrl: '../public_html//WEB-INF/pages/View.html',
+        templateUrl: '../public_html/WEB-INF/pages/View.html',
         controller: 'mainController'
     })
     
 /*    .when(('/view'), {
-        templateUrl: '../public_html//WEB-INF/pages/View.html',
+        templateUrl: '/WEB-INF/pages/View.html',
         controller: 'mainController'
     })           -               --- -  if reload is not needed route to this instead */
     
     .when('/list', {
-        templateUrl: '../public_html//WEB-INF/pages/List.html',
+        templateUrl: '../public_html/WEB-INF/pages/List.html',
         controller: 'mainController'
     })
 });

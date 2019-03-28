@@ -22,7 +22,7 @@ app.controller('mainController', ['$scope', '$http', '$location', '$rootScope', 
     
     $scope.submit2 = function() {
     	    $rootScope.mailID=ID;
-    //    	console.log($rootScope.mailID);
+        	console.log($rootScope.mailID);
     	$http({
             method: 'GET',
             url: 'https://5c5a21f9af3ff700140de477.mockapi.io/api/email/'+  $rootScope.mailID
